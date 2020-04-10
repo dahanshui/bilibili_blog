@@ -33,15 +33,15 @@
 # 项目运行配置
 ## 一、idea打开项目（Maven项目）
 ![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/开发环境.png)
-  * application-dev 开发环境
-  * application-pro 产品环境
-  * logback-spring.xml 是日志logback配置文件
-  * messages.properties 国际化的全局配置文件（可自行定义属性）
+   * application-dev 开发环境
+   * application-pro 产品环境
+   * logback-spring.xml 是日志logback配置文件
+   * messages.properties 国际化的全局配置文件（可自行定义属性）
 ![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/工具类.png)
-  * MarkdownUtils 是将Markdown编辑器的值转换为Html
-  * 后面两个是进行简单的MD5加密到数据库
+   * MarkdownUtils 是将Markdown编辑器的值转换为Html
+   * 后面两个是进行简单的MD5加密到数据库
 ![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/错误视图.png)
-  * 404 500 以及其他错误就会跳转到相应视图
+   * 404 500 以及其他错误就会跳转到相应视图
 ## 二、环境配置
 * 连接数据库配置和日志级别设定
 ![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/dev.png)
