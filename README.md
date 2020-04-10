@@ -18,7 +18,7 @@
    * 博客按标签展示
    * 博客归档
    * 关于我
-## 商城设计及应用
+## 系统设计及应用
 * 前后台需求列表
  ![q01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg)
  * 数据库实体关系
@@ -32,74 +32,59 @@
 * 开发工具 idea
 # 项目运行配置
 ## 一、idea打开项目（Maven项目）
-![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/实体关系.png)
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/开发环境.png)
 * application-dev 开发环境
 * application-pro 产品环境
 * logback-spring.xml 是日志logback配置文件
 * messages.properties 国际化的全局配置文件（可自行定义属性）
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/工具类.png)
+* MarkdownUtils 是将Markdown编辑器的值转换为Html
+* 后面两个是进行简单的MD5加密到数据库
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/错误视图.png)
+* 404 500 以及其他错误就会跳转到相应视图
 ## 二、环境配置
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/s02.png)
-* 连接数据库配置
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/l01.png)
-* 进行日志级别设定
+* 连接数据库配置和日志级别设定
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/dev.png)
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/pro.png)
 ## 数据库导入
 * 数据库导入可使用命令行或者客户端工具进行导入---此处不做过多赘述
 ## tomcat部署
-* 使用SpringBoot内嵌的tomcat服务器，不需要配置
+* 使用SpringBoot内嵌的tomcat服务器，不需要部署
 # 测试地址
-## 前端访问地址
+## 前台访问地址
 http://localhost:8081
 ## 后台访问地址
 http://localhost:8081/admin
 # 打包
 ## 通过Maven进行打包
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/打包01.png)
-## 打包成功后会在target目录下生成一个（项目名.war）的包
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/打包02.png)
-# 商城截图
-## 前端页面
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/打包.png)
+## 打包成功后会在target目录下生成一个（项目名.jar）的包
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/jar.png)
+# 系统截图
+## 前台页面
 * 首页
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/首页1.png)
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/首页2.png)
-* 登录、注册
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/登录.png)
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/注册.png)
-* 产品详情
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/产品详情.png)
-* 提交订单
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/fore-提交订单.png)
-* 付款
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/支付.png)
-* 付款成功
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/付款成功.png)
-* 查看订单
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/全部订单.png)
-* 同类型产品界面
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/同类型--产品界面.png)
-* 购物车
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/购物车.png)
-* 模态登录
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/forehome/模态登录.png)
-## 后端界面
-* 登录、注册
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/admin/后台登陆.png)
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/admin/后台注册.png)
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/index.png)
+* 博客详情页面
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/详情页.png)
+* 博客分类
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/分类.png)
+* 博客标签
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/标签.png)
+* 博客归档
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/归档.png)
+* 关于我
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/关于我.png)
+## 后台界面
+* 登录
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/后台登录.png)
+* 博客管理
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/博客管理-列表.png)
+* 博客发布
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/博客管理-发布.png)
 * 分类管理
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/admin/分类管理.png)
-* 图片管理
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/admin/图片管理.png)
-* 属性管理
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/admin/属性管理.png)
-* 产品管理
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/admin/产品管理.png)
-* 属性设置
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/admin/属性设置.png)
-* 前台用户管理
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/admin/前台用户管理.png)
-* 后台用户管理
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/admin/后台用户管理.png)
-* 订单管理
-![p01](https://github.com/dahanshui/Images/blob/master/tmall_ssm_Images/admin/订单管理.png)
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/博客分类.png)
+* 标签管理
+![p01](https://github.com/dahanshui/bilibili_blog/blob/master/show_picture/博客标签.png)
 如果你觉得还不错的话，给个星星吧！
 
 
