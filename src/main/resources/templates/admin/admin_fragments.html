@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title th:replace="${title}">博客详情</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/fore.css" th:href="@{/css/fore.css}">
+</head>
+<body>
+<!--导航栏-->
+<nav class="ui inverted attached segment index-padded-mini index-shadow-small" th:fragment="nav-top(title)">
+    <div class="ui container">
+        <div class="ui stackable inverted secondary menu">
+            <h2 class="ui teal header item">管理后台</h2>
+            <a href="" th:href="@{/admin/blogs}" class="index-item item index-mobile-hide" th:classappend="${title==0} ? 'active'"><i class="small home icon"></i>博客</a>
+            <a href="" th:href="@{/admin/types}" class="index-item item index-mobile-hide" th:classappend="${title==1} ? 'active'"><i class="small idea icon"></i>分类</a>
+            <a href="" th:href="@{/admin/tags}" class="index-item item index-mobile-hide" th:classappend="${title==2} ? 'active'"><i class="small tags icon"></i>标签</a>
+            <div class="right index-mobile-hide index-item menu">
+                <div class="ui  dropdown item">
+                    <div class="text">
+                        <img class="ui avatar image" src="https://picsum.photos/id/1005/100/100">
+                        陈潢
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" class="item" th:href="@{/admin/loginout}">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui menu black icon button index-right-top index-mobile-show index-list">
+            <i class="sidebar icon"></i>
+        </div>
+    </div>
+</nav>
+<!--底部-->
+<footer th:fragment="footer" class="ui inverted vertical segment index-padded-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/images/wechat2.png" alt="" class="ui rounded image" style="width: 100px;" th:src="@{/images/wechat2.png}">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header index-text-thin index-text-spaced">最新博客</h4>
+                <div id="newBlogForm">
+                    <div class="ui inverted link list" th:fragment="newBlogList">
+                        <a href="" target="_blank" th:href="@{/blog/{id}(id=${blog.id})}" class="item" th:each="blog:${newBlogs}"
+                           th:text="${blog.title}">用户故事（User tory）</a>
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header index-text-thin index-text-spaced">联系作者</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item" target="_blank">QQ：3129958091</a>
+                    <a href="dahanshuich@163.com" class="item" target="_blank" th:text="#{index.email}">Email: dahanshuich@163.com</a>
+                    <a href="https://github.com/dahanshui" class="item" target="_blank">
+                        Github：https://github.com/dahanshui</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header index-text-thin index-text-spaced">Blog</h4>
+                <p class="index-text-thin index-text-spaced index-opacity">
+                    这是我的个人博客，会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助
+                </p>
+            </div>
+        </div>
+        <div class="ui inverted section divider "></div>
+        <p class="index-text-thin index-text-spaced index-opacity-tiny">Copyright © 2020 - 2021 Dahansui</p>
+    </div>
+</footer>
+<th:block th:fragment="javaScript">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $("#newBlogForm").load(/*[[@{/footer/newBlogList}]]*/"/footer/newBlogList");
+    </script>
+</th:block>
+
+</body>
+</html>

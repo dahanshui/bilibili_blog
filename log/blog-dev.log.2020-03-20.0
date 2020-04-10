@@ -1,0 +1,110 @@
+2020-03-20 00:06:48.183  WARN 17132 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m59s195ms977µs800ns).
+2020-03-20 00:15:48.551  WARN 17132 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m352ms171µs899ns).
+2020-03-20 09:56:12.892  INFO 1984 --- [restartedMain] com.chen.blog.BlogApplication            : Starting BlogApplication on DESKTOP-3CD6OMH with PID 1984 (E:\project\blog\target\classes started by 27201 in E:\project\blog)
+2020-03-20 09:56:12.895 DEBUG 1984 --- [restartedMain] com.chen.blog.BlogApplication            : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-20 09:56:12.895  INFO 1984 --- [restartedMain] com.chen.blog.BlogApplication            : The following profiles are active: dev
+2020-03-20 09:56:13.326  INFO 1984 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-20 09:56:13.328  INFO 1984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-20 09:56:13.329  INFO 1984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-20 09:56:14.723  INFO 1984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-20 09:56:14.818  INFO 1984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84ms. Found 4 JPA repository interfaces.
+2020-03-20 09:56:15.856  INFO 1984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-03-20 09:56:15.866  INFO 1984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-20 09:56:15.866  INFO 1984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-20 09:56:16.018  INFO 1984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-20 09:56:16.018  INFO 1984 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2688 ms
+2020-03-20 09:56:16.330  INFO 1984 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-20 09:56:16.411  INFO 1984 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-20 09:56:16.566  INFO 1984 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-20 09:56:16.679  INFO 1984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-20 09:56:16.840  INFO 1984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-20 09:56:16.864  INFO 1984 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-03-20 09:56:17.710  INFO 1984 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-20 09:56:17.720  INFO 1984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-20 09:56:18.656  WARN 1984 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-20 09:56:19.171  INFO 1984 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-20 09:56:19.445  INFO 1984 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-20 09:56:20.113  INFO 1984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-20 09:56:20.187  INFO 1984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-03-20 09:56:20.439  INFO 1984 --- [restartedMain] com.chen.blog.BlogApplication            : Started BlogApplication in 9.084 seconds (JVM running for 13.167)
+2020-03-20 09:56:20.516  INFO 1984 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-20 09:56:20.517  INFO 1984 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-20 09:56:20.537  INFO 1984 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-03-20 09:56:20.579  INFO 1984 --- [http-nio-8081-exec-1] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 09:56:20.582  INFO 1984 --- [http-nio-8081-exec-1] com.chen.blog.aspect.logAspect           : {url='/', ip='127.0.0.1', classMethod='com.chen.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateDate: DESC], {}]}
+2020-03-20 09:56:20.830  WARN 1984 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-03-20 09:56:20.853  WARN 1984 --- [http-nio-8081-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-03-20 09:56:20.884  INFO 1984 --- [http-nio-8081-exec-1] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 09:56:20.885  INFO 1984 --- [http-nio-8081-exec-1] com.chen.blog.aspect.logAspect           : Result:index
+2020-03-20 09:56:26.102  INFO 1984 --- [http-nio-8081-exec-5] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 09:56:26.102  INFO 1984 --- [http-nio-8081-exec-5] com.chen.blog.aspect.logAspect           : {url='/blog/27', ip='127.0.0.1', classMethod='com.chen.blog.controller.IndexController.blogPage', args=[{}, 27]}
+2020-03-20 09:56:26.163  INFO 1984 --- [http-nio-8081-exec-5] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 09:56:26.164  INFO 1984 --- [http-nio-8081-exec-5] com.chen.blog.aspect.logAspect           : Result:blog
+2020-03-20 10:17:42.555  INFO 1984 --- [http-nio-8081-exec-7] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 10:17:42.556  INFO 1984 --- [http-nio-8081-exec-7] com.chen.blog.aspect.logAspect           : {url='/admin', ip='127.0.0.1', classMethod='com.chen.blog.controller.LoginController.loginPage', args=[]}
+2020-03-20 10:17:42.559  INFO 1984 --- [http-nio-8081-exec-7] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 10:17:42.559  INFO 1984 --- [http-nio-8081-exec-7] com.chen.blog.aspect.logAspect           : Result:admin/login
+2020-03-20 10:17:44.050  INFO 1984 --- [http-nio-8081-exec-1] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 10:17:44.051  INFO 1984 --- [http-nio-8081-exec-1] com.chen.blog.aspect.logAspect           : {url='/admin/login', ip='127.0.0.1', classMethod='com.chen.blog.controller.LoginController.login', args=[123, 123, org.apache.catalina.session.StandardSessionFacade@65aa9e23, {}]}
+2020-03-20 10:17:44.081  INFO 1984 --- [http-nio-8081-exec-1] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 10:17:44.081  INFO 1984 --- [http-nio-8081-exec-1] com.chen.blog.aspect.logAspect           : Result:/admin/index
+2020-03-20 10:17:45.047  INFO 1984 --- [http-nio-8081-exec-10] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 10:17:45.048  INFO 1984 --- [http-nio-8081-exec-10] com.chen.blog.aspect.logAspect           : {url='/admin/types', ip='127.0.0.1', classMethod='com.chen.blog.controller.TypeController.typePage', args=[Page request [number: 0, size 8, sort: id: DESC], {}]}
+2020-03-20 10:17:45.058  INFO 1984 --- [http-nio-8081-exec-10] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 10:17:45.058  INFO 1984 --- [http-nio-8081-exec-10] com.chen.blog.aspect.logAspect           : Result:admin/types
+2020-03-20 10:17:46.102  INFO 1984 --- [http-nio-8081-exec-4] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 10:17:46.103  INFO 1984 --- [http-nio-8081-exec-4] com.chen.blog.aspect.logAspect           : {url='/admin/tags', ip='127.0.0.1', classMethod='com.chen.blog.controller.TagsController.tagsPage', args=[Page request [number: 0, size 8, sort: id: DESC], {}]}
+2020-03-20 10:17:46.111  INFO 1984 --- [http-nio-8081-exec-4] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 10:17:46.112  INFO 1984 --- [http-nio-8081-exec-4] com.chen.blog.aspect.logAspect           : Result:admin/tags
+2020-03-20 10:17:50.672  INFO 1984 --- [http-nio-8081-exec-6] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 10:17:50.672  INFO 1984 --- [http-nio-8081-exec-6] com.chen.blog.aspect.logAspect           : {url='/', ip='127.0.0.1', classMethod='com.chen.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateDate: DESC], {}]}
+2020-03-20 10:17:50.691  INFO 1984 --- [http-nio-8081-exec-6] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 10:17:50.692  INFO 1984 --- [http-nio-8081-exec-6] com.chen.blog.aspect.logAspect           : Result:index
+2020-03-20 10:17:53.958  INFO 1984 --- [http-nio-8081-exec-9] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 10:17:53.959  INFO 1984 --- [http-nio-8081-exec-9] com.chen.blog.aspect.logAspect           : {url='/blog/27', ip='127.0.0.1', classMethod='com.chen.blog.controller.IndexController.blogPage', args=[{}, 27]}
+2020-03-20 10:17:53.965  INFO 1984 --- [http-nio-8081-exec-9] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 10:17:53.965  INFO 1984 --- [http-nio-8081-exec-9] com.chen.blog.aspect.logAspect           : Result:blog
+2020-03-20 23:10:12.659  INFO 9548 --- [restartedMain] com.chen.blog.BlogApplication            : Starting BlogApplication on LAPTOP-QFMMIQOL with PID 9548 (D:\project\blog\target\classes started by 大汗水 in D:\project\blog)
+2020-03-20 23:10:12.689 DEBUG 9548 --- [restartedMain] com.chen.blog.BlogApplication            : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-20 23:10:12.689  INFO 9548 --- [restartedMain] com.chen.blog.BlogApplication            : The following profiles are active: dev
+2020-03-20 23:10:12.721  INFO 9548 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-20 23:10:12.721  INFO 9548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-20 23:10:12.721  INFO 9548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-20 23:10:13.397  INFO 9548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-20 23:10:13.450  INFO 9548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 4 JPA repository interfaces.
+2020-03-20 23:10:13.967  INFO 9548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-03-20 23:10:13.975  INFO 9548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-20 23:10:13.975  INFO 9548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-20 23:10:14.038  INFO 9548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-20 23:10:14.039  INFO 9548 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1318 ms
+2020-03-20 23:10:14.199  INFO 9548 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-20 23:10:14.241  INFO 9548 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-03-20 23:10:14.312  INFO 9548 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-20 23:10:14.369  INFO 9548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-20 23:10:14.450  INFO 9548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-20 23:10:14.462  INFO 9548 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-03-20 23:10:14.926  INFO 9548 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-20 23:10:14.931  INFO 9548 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-20 23:10:15.450  WARN 9548 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-20 23:10:15.618  INFO 9548 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-20 23:10:15.723  INFO 9548 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-20 23:10:15.913  INFO 9548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-20 23:10:16.093  INFO 9548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-03-20 23:10:16.095  INFO 9548 --- [restartedMain] com.chen.blog.BlogApplication            : Started BlogApplication in 3.79 seconds (JVM running for 4.541)
+2020-03-20 23:10:58.356  INFO 9548 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-20 23:10:58.356  INFO 9548 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-20 23:10:58.356  INFO 9548 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2020-03-20 23:10:58.388  INFO 9548 --- [http-nio-8081-exec-2] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 23:10:58.388  INFO 9548 --- [http-nio-8081-exec-2] com.chen.blog.aspect.logAspect           : {url='/', ip='127.0.0.1', classMethod='com.chen.blog.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateDate: DESC], {}]}
+2020-03-20 23:10:58.460  WARN 9548 --- [http-nio-8081-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-03-20 23:10:58.460  WARN 9548 --- [http-nio-8081-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-03-20 23:10:58.475  INFO 9548 --- [http-nio-8081-exec-2] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 23:10:58.475  INFO 9548 --- [http-nio-8081-exec-2] com.chen.blog.aspect.logAspect           : Result:index
+2020-03-20 23:11:09.979  INFO 9548 --- [http-nio-8081-exec-7] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 23:11:09.979  INFO 9548 --- [http-nio-8081-exec-7] com.chen.blog.aspect.logAspect           : {url='/blog/27', ip='127.0.0.1', classMethod='com.chen.blog.controller.IndexController.blogPage', args=[{}, 27]}
+2020-03-20 23:11:10.011  INFO 9548 --- [http-nio-8081-exec-7] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 23:11:10.011  INFO 9548 --- [http-nio-8081-exec-7] com.chen.blog.aspect.logAspect           : Result:blog
+2020-03-20 23:12:36.847  INFO 9548 --- [http-nio-8081-exec-9] com.chen.blog.aspect.logAspect           : --before--
+2020-03-20 23:12:36.847  INFO 9548 --- [http-nio-8081-exec-9] com.chen.blog.aspect.logAspect           : {url='/blog/27', ip='127.0.0.1', classMethod='com.chen.blog.controller.IndexController.blogPage', args=[{}, 27]}
+2020-03-20 23:12:36.849  INFO 9548 --- [http-nio-8081-exec-9] com.chen.blog.aspect.logAspect           : --after--
+2020-03-20 23:12:36.850  INFO 9548 --- [http-nio-8081-exec-9] com.chen.blog.aspect.logAspect           : Result:blog

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/admin_fragments :: head(~{ :: title})">
+    <title>管理后台</title>
+</head>
+<body>
+<!--导航栏-->
+<nav class="ui inverted attached segment index-padded-mini index-shadow-small" th:replace="admin/admin_fragments::nav-top(0)">
+</nav>
+<!--文本内容-->
+<div class="m-container-small index-padded-big">
+    <div class="ui container">
+        <div class="ui success large message">
+            <h3>Hi,</h3>
+            <p>大汗水，欢迎登录！</p>
+        </div>
+        <img src="https://picsum.photos/id/1005/1000/400" alt="" class="ui rounded bordered fluid image">
+    </div>
+</div>
+<br>
+<br>
+<!--底部-->
+<footer class="ui inverted vertical segment index-padded-massive" th:replace="admin/admin_fragments :: footer">
+</footer>
+<!--/*/<th:block th:replace="admin/admin_fragments :: javaScript">/*/-->
+<!--/*/</th:block>/*/-->
+<script>
+    $(function () {
+        $(".index-list").click(function () {
+            $(".index-item").toggleClass("index-mobile-hide");
+        });
+        $('.ui.dropdown').dropdown({
+            on: 'hover'
+        })
+        ;
+    });
+</script>
+</body>
+</html>

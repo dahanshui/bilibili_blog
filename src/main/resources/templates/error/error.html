@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{_fragments :: head(~{::title})}">
+    <title>错误</title>
+</head>
+<body>
+<!--导航栏-->
+<nav th:replace="~{_fragments :: nav-top(0)}">
+</nav>
+<br>
+<br>
+<br>
+<br>
+<div class="m-container-small index-padded-massive">
+    <div class="ui message error index-padded-massive">
+        <div class="ui container">
+            <h1>错误</h1>
+            <p>对不起，请求发生错误了</p>
+        </div>
+    </div>
+</div>
+<div>
+    <div th:utext="'&lt;!--'" th:remove="tag"></div>
+    <div th:utext="'Failed Request URL : ' + ${url}" th:remove="tag"></div>
+    <div th:utext="'Exception message : ' + ${exception.message}" th:remove="tag"></div>
+    <ul th:remove="tag">
+        <li th:each="st : ${exception.stackTrace}" th:remove="tag"><span th:utext="${st}" th:remove="tag"></span></li>
+    </ul>
+    <div th:utext="'--&gt;'" th:remove="tag"></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!--底部-->
+<footer class="ui inverted vertical segment index-padded-massive" th:replace="~{_fragments :: footer}">
+</footer>
+<!--/*/<th:block th:replace="_fragments :: javaScript">/*/-->
+<!--/*/</th:block>/*/-->
+</body>
+</html>

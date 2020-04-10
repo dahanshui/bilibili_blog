@@ -1,0 +1,23 @@
+2020-03-08 22:27:41.520  INFO 31812 --- [restartedMain] com.chen.blog.BlogApplication            : Starting BlogApplication on DESKTOP-3CD6OMH with PID 31812 (E:\project\blog\target\classes started by 27201 in E:\project\blog)
+2020-03-08 22:27:41.574  INFO 31812 --- [restartedMain] com.chen.blog.BlogApplication            : The following profiles are active: pro
+2020-03-08 22:27:43.950  WARN 31812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-08 22:27:44.201  WARN 31812 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-08 22:27:44.322 ERROR 31812 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2020-03-08 22:28:03.322  INFO 27356 --- [restartedMain] com.chen.blog.BlogApplication            : Starting BlogApplication on DESKTOP-3CD6OMH with PID 27356 (E:\project\blog\target\classes started by 27201 in E:\project\blog)
+2020-03-08 22:28:03.326  INFO 27356 --- [restartedMain] com.chen.blog.BlogApplication            : The following profiles are active: pro
+2020-03-08 22:28:05.740  WARN 27356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-08 22:28:05.962  WARN 27356 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-08 22:28:06.081  INFO 27356 --- [restartedMain] com.chen.blog.BlogApplication            : Started BlogApplication in 3.55 seconds (JVM running for 5.422)

@@ -1,0 +1,10 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+comment.avatar: /images/avatar.png

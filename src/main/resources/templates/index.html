@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{_fragments :: head(~{::title})}">
+    <title>首页</title>
+</head>
+<body>
+<!--导航栏-->
+<nav th:replace="~{_fragments :: nav-top(0)}">
+</nav>
+<!--文本内容-->
+<div class="m-container index-padded-big">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <!--左边内容-->
+            <div class="ui eleven wide column animated fadeIn">
+                <div class="ui top attached segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <h3 class="ui teal header">博客</h3>
+                        </div>
+                        <div class="right aligned column">
+                            共<h2 class="ui orange header index-line-block index-text-thin" th:text="${page.totalElements}">14</h2>篇
+                        </div>
+                    </div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui padded vertical segment index-padded-large  blog-padded-lr-large" th:each="blog:${page.content}">
+                        <div class="ui middle aligned stackable mobile reversed grid">
+                            <div class="ui eleven wide column">
+                                <h3 class="ui header"><a href="" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="index-black" th:text="${blog.title}">你真的理解什么是财富自由吗?</a></h3>
+                                <p class="index-text" th:text="|${blog.description}......|">在你决定踏上财富自由的路之前，你要先想清楚，
+                                    这件事真正的意义是什么；如果你真的“想要”财富自由，
+                                    那么你就需要理解“财富自由”。</p>
+                                <div class="ui stackable grid">
+                                    <div class="ui eleven wide column">
+                                        <div class="ui mini horizontal link list">
+                                            <div class="item">
+                                                <img src="https://picsum.photos/id/1005/100/100" alt=""
+                                                     class="ui avatar image" th:src="@{${blog.user.avatar}}">
+                                                <div class="content"><a href="#" class="header" th:text="${blog.user.nickname}">大汗水</a></div>
+                                            </div>
+                                            <div class="item">
+                                                <i class="calendar icon"></i> <span th:text="${#dates.format(blog.updateDate,'yyyy-MM-dd')}">2020-2-27</span>
+                                            </div>
+                                            <div class="item">
+                                                <i class="eye icon"></i> <span th:text="${blog.views}">123</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui right aligned five wide column">
+                                        <a href="" class="ui teal basic label index--tiny index-text-thin" th:text="${blog.type.name}">认知升级</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui five wide column">
+                                <a href="#" target="_blank" th:href="@{/blog/{id}(id=${blog.id})}">
+                                    <img src="https://picsum.photos/id/1005/800/450" alt=""
+                                         class="ui medium rounded image" th:src="@{${blog.firstPicture}}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="ui bottom attached segment"  th:if="${page.totalPages}>1">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <a href="#" th:href="@{/(page=${page.number}-1)}" th:unless="${page.first}" class="ui mini teal basic button">上一页</a>
+                        </div>
+                        <div class="right aligned column">
+                            <a href="#"  th:href="@{/(page=${page.numbe r}+1)}" th:unless="${page.last}"class="ui mini teal basic button">下一页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边内容-->
+            <div class="ui five wide column">
+                <!--分类-->
+                <div class="ui segments">
+                    <!--右边top-->
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="idea icon"></i>分类
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <div class="ui vertical fluid menu">
+                            <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="item" th:each="type:${types}"><span th:text="${type.name}">学习日志</span>
+                                <div class="ui teal basic left pointing label" th:text="${#arrays.length(type.blogs)}">12</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--标签-->
+                <div class="ui segments index-margin-top-large">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="tags icon"></i>标签
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more<i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <a href="#"  th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui teal basic left pointing label index-margin-tiny" th:each="tag:${tags}"><span th:text="${tag.name}">方法论</span>
+                            <div class="detail" th:text="${#arrays.length(tag.blogs)}">12</div>
+                        </a>
+                    </div>
+                </div>
+                <!--最新推荐-->
+                <div class="ui segments index-margin-top-large">
+                    <div class="ui secondary segment">
+                        <i class="bookmark icon"></i>最新推荐
+                    </div>
+                    <div class="ui segment" th:each="recommend:${recommendBlogs}">
+                        <a href="#" th:href="@{/blog/{id}(id=${recommend.id})}" target="_blank" class="index-black index-text-thin" th:text="${recommend.title}">用户故事（User Story）</a>
+                    </div>
+
+                </div>
+                <!--二维码-->
+                <h4 class="ui horizontal divider header index-margin-top-large">扫码关注作者</h4>
+                <div class="ui centered card index-margin-top-large" style="width: 11em"><!--centered基于父级标签进行居中-->
+                    <img src="../static/images/wechat2.png" th:src="@{/images/wechat2.png}" alt="" class="ui rounded image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<!--底部-->
+<footer class="ui inverted vertical segment index-padded-massive" th:replace="~{_fragments :: footer}">
+</footer>
+<!--/*/<th:block th:replace="_fragments :: javaScript">/*/-->
+<!--/*/</th:block>/*/-->
+<script>
+    $(function () {
+        $(".index-list").click(function () {
+            $(".index-item").toggleClass("index-mobile-hide");
+        });
+    });
+</script>
+</body>
+</html>
